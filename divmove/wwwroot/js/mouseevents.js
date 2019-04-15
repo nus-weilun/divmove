@@ -1,5 +1,5 @@
 ﻿function $(id) {
-    return document.getElementById('pageContainer');
+    return document.getElementById('id');
 }
 
 var _startX = 0;			// mouse starting positions
@@ -16,6 +16,21 @@ InitDragDrop();
 function InitDragDrop() {
     document.onmousedown = OnMouseDown;
     document.onmouseup = OnMouseUp;
+}
+
+function create_box() {
+    div = document.createElement("div");
+    div.innerHTML = "clone box";
+    div.className = "drag";
+    document.body.appendChild(div);
+}
+
+function create_rect() {
+    div = document.createElement("div");
+    div.innerHTML = "clone rect";
+    div.className = "drag";
+    div.style.width = "200px";
+    document.body.appendChild(div);
 }
 
 function OnMouseDown(e) {

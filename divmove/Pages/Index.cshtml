@@ -6,16 +6,10 @@
 
 <link rel="stylesheet" href="~/css/shapes.css" />
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>JavaScript Drag and Drop Tutorial</title>
-    <meta name="robots" content="follow" />
-    <meta name="robots" content="all" />
-    <meta name="revisit-after" content="2 days" />
+<html>
 
-</head>
 <body>
-
+    <div>
         <button onclick="create_box()">box</button>
         <button onclick="create_rect()">rect</button>
         <hr />
@@ -28,8 +22,12 @@
     </div>
 </body>
 </html>
+
  
 <script>
+
+    // tutorial website http://luke.breuer.com/tutorial/javascript-drag-and-drop-tutorial.aspx 
+
     function $(id) {
         return document.getElementById(id);
     }
@@ -57,6 +55,7 @@
         div.innerHTML = "clone rect";
         div.className = "drag";
         div.style.width = "200px";
+        div.style.position = "absolute";
         document.body.appendChild(div);  
     }
 
