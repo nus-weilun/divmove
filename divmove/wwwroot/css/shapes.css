@@ -1,0 +1,21 @@
+﻿body {
+}
+
+.box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.drag {
+    border: 1px solid black;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    padding: 0.5em;
+    margin: 0 0 0.5em 1.5em;
+    width: 50px;
+    cursor: move;
+}
